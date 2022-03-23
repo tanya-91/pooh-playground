@@ -1,8 +1,22 @@
+<!DOCTYPE html>
 <html>
-    <body>
-        <h1>hello, world</h1>
-        <script>
-            console.log("Hello, world");
-        </script>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body>
+    <h2>test</h2>
+    <script>
+        var str = prompt("Input number");
+        var n = Number(str);
+        if (n > 5) {
+            document.write(n + " is bigger than 5")
+        } else if (n >= 3) {
+            document.write(n + " is bigger than 3, smaller than 5.")
+        } else {
+            document.write(n + " is smaller than 5")
+        }
+    </script>
+</body>
 </html>
