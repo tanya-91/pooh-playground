@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body>
+    <h2>1~100 짝수의 합</h2>
+    <script>
+        var sum = 0;
+        // var n = 1;
+        // while (n <= 100); {
+        //     if (n%2 == 0) {
+        //     sum = sum + n;
+        //     console.log(n, sum)
+        //     n++;
+        //     }
+        // }
+
+        for (var i = 1; i <= 100; i++) {
+        if (i % 2 == 0) {
+            sum += i;
+            console.log(i, sum);
+        }
+    }
+        
+        document.write("1부터 100까지 짝수의 합은 " + sum + " 입니다.")
+
+        // var a = prompt("홀이게 짝이게? 숫자를 입력해!");
+        //     var num = Number(a);
+        //     if (num%2 == 0) {
+        //         document.write(num + " 은(는) 짝! ");
+        //     } else {
+        //         document.write(num + " 은(는) 홀! ");
+        //     }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>홀? 짝? </h2>
+        <p>~홀짝 판별 푸로그램~</p>
+        <script>
+            var a = prompt("홀이게 짝이게? 숫자를 입력해!");
+            var num = Number(a);
+            if (num%2 == 0) {
+                document.write(num + " 은(는) 짝! ");
+            } else {
+                document.write(num + " 은(는) 홀! ");
+            }
+        </script>
+    </body>
+</html>
+
+<!-- num/2는 안되는데 왜 num%2는 되는가? -->

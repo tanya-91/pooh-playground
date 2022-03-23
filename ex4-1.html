@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body>
+    <h2>소수일까요 아닐까요</h2>
+    <script>
+        var a = true;
+        var n = Number(prompt("2 이상의 숫자를 입력해주세요."));
+        for (var b = 2; b < n; b++){
+            if (n % b === 0){
+                a = false;
+                break;
+            }
+            console.log(a, b)
+        }
+
+        if (a) {
+            document.write(n + "은 소수다.")
+        } else {
+            document.write(n + "은 소수가 아니다.")
+        }
+
+// 처음부터 소수라는 가정 하에 시작,
+// true인데 2부터 시작하는데 2가 클때는 하나씩 증가하면서 체크
+// (b가 n보다 작을때까지, 2로 안나눠지면 증가시켜서 다시 반복)
+// 만약 입력한 숫자를 2로 나눴는데 0이라면 소수가 아니니까 false체크가 되고, false 시 break됨
+// 아래 if문으로, 참일때는 소수/거짓일때는 아닌걸로
+
+
+
+        // if (n % 2 == 0) {
+        //     document.write("입력하신 " + n + " 은(는) 소수가 아닙니다.")
+        // } else if (n % 2 >= 3) {
+        //     document.write("입력하신 " + n + " 은(는) 소수입니다.")
+        // } else if (n%n != 0) {
+        //     document.write("입력하신 " + n + " 은(는) 소수가 아닙니다.")
+        // }
+    
+    </script>
+</body>
+</html>
+
+
+<!-- var a = prompt("아무 숫자나 입력해주세요.")
+var n = Number(a);
+if (n % 2 == 0) {
+    document.write("입력하신 " + n + " 은(는) 소수가 아닙니다.")
+} else if (n % 2 >= 3) {
+    document.write("입력하신 " + n + " 은(는) 소수입니다.")
+} else if (n%n != 0) {
+    document.write("입력하신 " + n + " 은(는) 소수가 아닙니다.")
+} -->

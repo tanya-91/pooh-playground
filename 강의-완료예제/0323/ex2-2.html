@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body>
+    <h2>대문자? 소문자?</h2>
+    <script>
+        var str = prompt("영어 문장을 입력해 주세요.");
+        var ustr = str.toUpperCase();
+        var lstr = str.toLowerCase();
+
+        if (str === ustr) {
+            document.write(str + " 은(는) 대문자 문장입니다.");
+        } else if (str === lstr) {
+            document.write(str + " 은(는) 소문자 문장입니다.");
+        } else {
+            document.write(str + " 은(는) 섞여있는 일반 문장입니다.");
+        }
+    </script>
+</body>
+</html>
+
+
+<!-- str.touppercase를 통해서 입력한 문장이 """모두 대문자였을때""" 와
+lowercase를 통해서 모두 소문자였을 때를 비교해서 체크하는 것.
+생각보다 간단한데 왜 생각 못했을까 ㅠㅠ -->
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>대? 소? </h2>
+        <script>
+            var a = prompt("대/소문자를 구분 해 드립니다.");
+            var b = string(a)
+            var c = Boolean(true)
+            var d = Boolean(false)
+            if (a = b) {
+                document.write(b + " 는 소문자 문장입니다.");
+            } else if (a = c) {
+                document.write(b + " 는 대문자 문장입니다.");
+            } else {
+                document.write("보통 문장이랍신다!")
+            }
+        </script>
+    </body>
+</html> -->

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body>
+    <h2>입력한 숫자의 개수와 합</h2>
+    <script>
+        
+        var a = prompt("숫자를 넣어주세요")
+        var num = Number(a)
+        if (num == 0) {
+            document.write("0은 안돼요!");
+        }
+        var sum = 0;
+        for (var n = 1; n > 1;) {
+            sum = sum + n;
+            console.log(n, sum)
+        }
+        document.write("입력하신 숫자의 합은 " + sum + " 입니다.")
+    </script>
+</body>
+</html>
