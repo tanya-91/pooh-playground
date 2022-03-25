@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>구구단 몇 단 알려줄까?</h2>
+        <script>
+            var a = prompt("단수를 입력해!");
+            var i = Number(a);
+            var j = 1;
+            var r = /[^0-9]/g;
+            if (i < 2) {
+                document.write("2에서 9까지의 숫자만 넣어주세요~")
+            } else if (i > 9) {
+                document.write("2에서 9까지의 숫자만 넣어주세요~")
+            } else {
+                for (i = 2; i <= 9; i++) {
+                    document.write("<br/>");
+                    for (j = 2; j < 10; j++) {
+                        document.write(j + " X " + i + " = " + (i * j) + "  ");
+                    }
+                }
+                String.r = /[\d]+/m,'';
+                if (a.match(r)) {
+                document.write("숫자만 넣어주세요~")
+                }
+            }
+
+        </script>
+    </body>
+</html>
+
+<!-- document.write("[ " + i + "단" + " ]") -->
+
+<!-- var r = /[\d]+/m,''; -->
+<!-- var r = /[^0-9]/g; -->
+
+<!-- var num = /[^0-9]/gi; 
+var r = str.(/[^0-9]/g);
+            -->
+
+<!-- 
+var num = Number
+} else if (i != num) { 
+document.write("2에서 9까지의 숫자만 넣어주세요!")-->
+
+
+<!-- /[\d]+/m,'' -->
+
+<!-- 0-9 -->
+
+<!-- b = (f = Number(j)) * (g = Number(i)) -->
+
+<!--document.write(j + " X " + i + " = " + (j * i) + "<br/>");-->
+<!-- 
+document.write(i + " X " + j + " = " + ((f = Number(j)) * (g = Number(i))) + "<br/>"); -->
+
+<!-- for (i = Number(a); i < 10; i++) {
+    for (j = 1; j < 10; j++) {
+    j = j*i
+    }
+} -->
